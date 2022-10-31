@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Kit's Industrial Weapons</name>
+	<author>Kitsune</author>
+	<supportedVersions><li>1.4</li></supportedVersions>
+	<packageId>KIT.IndustrialWeaponsSCP</packageId>
+    <loadAfter>
+	    <li>Ludeon.RimWorld</li>
+		</loadAfter>
+	<description>
+
+The mod aims to add some industrial weapons :)
+
+	</description>
+</ModMetaData>

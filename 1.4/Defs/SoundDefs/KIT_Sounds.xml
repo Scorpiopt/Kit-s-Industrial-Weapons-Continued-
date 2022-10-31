@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+  <SoundDef>
+    <defName>KIT_SemiAutomaticPistol</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/KIT_Shot_Russian_Generic</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>35</min>        
+          <max>35</max>
+        </volumeRange>      
+        <pitchRange>
+          <min>0.6976015</min>        
+          <max>0.7769372</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>KIT_BoltSMG</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <name>Shot</name>      
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/KIT_Shot_Russian_Generic</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>40.58823</min>        
+          <max>40.58823</max>
+        </volumeRange>
+		<pitchRange>
+          <min>1.2770592</min>        
+          <max>1.314706</max>
+        </pitchRange>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>KIT_PrecisionLMG</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxVoices>8</maxVoices>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/KIT_Shot_Russian_Generic</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>53.52942</min>        
+          <max>73.52942</max>
+        </volumeRange>
+		<pitchRange>
+          <min>0.8770592</min>        
+          <max>1.014706</max>
+        </pitchRange>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>KIT_BayonetRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/KIT_Shot_Russian_Generic</clipFolderPath>
+          </li>
+        </grains>      
+		<pitchRange>
+          <min>0.9770592</min>        
+          <max>1.114706</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>KIT_AntiqueSniperRifle</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Things/KIT_Shot_Russian_Generic</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>50</min>        
+          <max>50</max>
+        </volumeRange>   
+		<pitchRange>
+          <min>0.751765</min>        
+          <max>0.774525</max>
+        </pitchRange>
+        <sustainLoop>False</sustainLoop>      
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

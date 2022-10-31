@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Bazooka -->
+  <ThingDef ParentName="BaseMakeableGun">
+    <defName>KIT_Bazooka</defName>
+    <label>bazooka</label>
+    <description>A single-use rocket launcher that fires a explosive rocket. Good against smalll groups of targets. Altough it has single use and lower power, it is quite cheap to make.</description>
+    <techLevel>Industrial</techLevel>
+    <tickerType>Normal</tickerType>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <graphicData>
+      <texPath>Things/WeaponRanged/Bazooka</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+	  <WorkToMake>12000</WorkToMake>
+      <MarketValue>600</MarketValue>
+      <Mass>6</Mass>
+      <RangedWeapon_Cooldown>12</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+	    <Chemfuel>10</Chemfuel>
+    </costList>
+    <recipeMaker>
+	  <recipeUsers>
+		<li>TableMachining</li>
+	  </recipeUsers>
+      <researchPrerequisite>KIT_EarlyGunsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <weaponTags>
+      <li>Gun</li>
+      <li>GunHeavy</li>
+    </weaponTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+    </thingSetMakerTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_Rocket</defaultProjectile>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>12</warmupTime>
+        <ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+        <range>24.9</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>InfernoCannon_Fire</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <onlyManualCast>true</onlyManualCast>
+        <stopBurstWithoutLos>false</stopBurstWithoutLos>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li>
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+    <comps>
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>1.9</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>
